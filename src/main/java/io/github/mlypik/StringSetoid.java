@@ -1,3 +1,5 @@
+package io.github.mlypik;
+
 import java.util.function.BiPredicate;
 
 public class StringSetoid {

@@ -1,5 +1,8 @@
+package io.github.mlypik;
+
 import com.pholser.junit.quickcheck.Property;
 import com.pholser.junit.quickcheck.runner.JUnitQuickcheck;
+import io.github.mlypik.StringSetoid;
 import org.junit.runner.RunWith;
 
 import java.util.function.BiPredicate;
@@ -12,8 +15,8 @@ import static org.junit.Assume.assumeTrue;
 public class EquivalenceRelationTest {
 
     private BiPredicate<String, String> relationUnderTest = StringSetoid.equivalenceRelation;
-//    private BiPredicate<String, String> relationUnderTest = StringSetoid.reflexivePropertyViolation;
-//    private BiPredicate<String, String> relationUnderTest = StringSetoid.symmetricPropertyViolation;
+//    private BiPredicate<String, String> relationUnderTest = io.github.mlypik.StringSetoid.reflexivePropertyViolation;
+//    private BiPredicate<String, String> relationUnderTest = io.github.mlypik.StringSetoid.symmetricPropertyViolation;
 
 
     /**
